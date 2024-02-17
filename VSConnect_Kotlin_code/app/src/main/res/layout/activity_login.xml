@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:background="@drawable/home"
+
+        android:padding="20dp"
+>
+
+    <ImageView
+            android:layout_width="296dp"
+            android:layout_height="176dp"
+            android:src="@drawable/logo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="1dp"
+            android:id="@+id/imageView"/>
+    <TextView
+            android:text="E-mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/titulo_email"
+            android:textColor="@color/white" android:textSize="20dp"
+            android:fontFamily="@font/titilliumweb_light" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="140dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/titulo_senha"
+            android:textColor="@color/white" android:textSize="20dp"
+            android:fontFamily="@font/titilliumweb_light" app:layout_constraintTop_toBottomOf="@+id/campo_email"
+            android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.002"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="exemplo@email.com"
+            android:textColorHint="@color/black"
+            android:background="@drawable/style_card"
+            android:paddingStart="10dp"
+
+            android:id="@+id/campo_email"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_email"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="******"
+            android:textColorHint="@color/black"
+            android:background="@drawable/style_card"
+            android:paddingStart="10dp"
+
+            android:id="@+id/campo_senha"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_senha"/>
+    <Button
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_entrar"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+
+            android:backgroundTint="@color/verde"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_senha"
+            android:layout_marginTop="40dp"
+            android:radius="10dp"
+
+            app:layout_constraintHorizontal_bias="0.497"/>
+
+
+    <!--            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/campo_senha" android:layout_marginTop="40dp"/>-->
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
